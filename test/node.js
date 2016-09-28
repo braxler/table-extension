@@ -4,9 +4,8 @@
   require('chai').should();
 
   var fs = require('fs'),
-      extension = require('../src/showdown-table.js'),
       showdown = require('showdown'),
-      converter = new showdown.Converter({extensions: [extension]}),
+      table = require('../src/showdown-table.js'),
       cases = fs.readdirSync('test/cases/')
         .filter(filter())
         .map(map('test/cases/')),
@@ -14,6 +13,8 @@
         .filter(filter())
         .map(map('test/issues/'));
 
+  showdown.extension('table',table);
+  var converter = new showdown.Converter({extensions: ['table']});
   // Register table extension
   //showdown.extensions.table = table;
 
