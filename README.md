@@ -1,18 +1,6 @@
 Showdown's Table Extension
 ==========================
 
-[![Build Status](https://travis-ci.org/showdownjs/table-extension.svg)](https://travis-ci.org/showdownjs/table-extension) [![npm version](https://badge.fury.io/js/showdown-table.svg)](http://badge.fury.io/js/showdown-table) [![npm version](https://badge.fury.io/bo/showdown-table.svg)](http://badge.fury.io/bo/showdown-table) 
-
-------
-
-# IMPORTANT NOTICE
-
-**THIS EXTENSION IS DEPRECATED**
-
-As of showdown v 1.2.0, table support was moved into core as an opt-in feature making this extension obsolete.
-As such, this extension will not receive further updates.
-
------
 **Add markdown table flavor to [showdown](https://github.com/showdownjs/showdown)**
 
 Adds support for:
