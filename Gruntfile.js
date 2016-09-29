@@ -32,19 +32,6 @@ module.exports = function (grunt) {
       }
     },
     jshint: {
-      options: {
-        jshintrc: '.jshintrc'
-      },
-      files: [
-        'Gruntfile.js',
-        'src/**/*.js',
-        'test/**/*.js'
-      ]
-    },
-    jscs: {
-      options: {
-        config: '.jscs.json'
-      },
       files: [
         'Gruntfile.js',
         'src/**/*.js',
@@ -72,8 +59,7 @@ module.exports = function (grunt) {
 
   require('load-grunt-tasks')(grunt);
 
-  grunt.registerTask('lint', ['jshint']);
-  grunt.registerTask('test', ['lint', 'simplemocha']);
+  grunt.registerTask('test', ['jshint', 'simplemocha']);
   grunt.registerTask('build', ['test', 'concat', 'comments', 'uglify']);
 
   grunt.registerTask('default', []);
