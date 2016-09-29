@@ -16,11 +16,11 @@ Adds support for:
 
 ### With [npm](http://npmjs.org)
 
-    npm install showdown-table
+    npm install showdown-table2
 
 ### With [bower](http://bower.io/)
 
-    bower install showdown-table
+    bower install showdown-table2
 
 ### Manual
 
