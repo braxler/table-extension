@@ -23,7 +23,6 @@
     "showdown": "^1.0.0"
   },
   "ignore": [
-    "src/",
     "test/",
     ".gitignore",
     ".travis.yml",
